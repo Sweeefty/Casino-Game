@@ -21,7 +21,7 @@ function buildDeck() {
 
     for (let i = 0; i < types.length; i++) {
         for (let j = 0; j < values.length; j++) {
-            deck.push(values[j] + "-" + types[i]);
+            deck.push(values[j] + "-" + types[i]); 
         }
     }
 }
@@ -53,7 +53,7 @@ function startGame() {
     while (dealerSum < 17) {
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "/public/cards" + card + ".png";
+        cardImg.src = "./cards/" + card + ".png";
         dealerSum += getValue(card);
         dealerAceCount += checkAce(card);
         document.getElementById("dealer-cards").append(cardImg);
@@ -63,7 +63,7 @@ function startGame() {
     for (let i = 0; i < 2; i++) {
         let cardImg = document.createElement("img");
         let card = deck.pop();
-        cardImg.src = "/public/cards" + card + ".png";
+        cardImg.src = "./cards/" + card + ".png";
         yourSum += getValue(card);
         yourAceCount += checkAce(card);
         document.getElementById("your-cards").append(cardImg);
@@ -87,7 +87,7 @@ function hit() {
     yourAceCount += checkAce(card);
     document.getElementById("your-cards").append(cardImg);
 
-    if (reduceAce(yourSum, yourAceCount) > 21) {
+    if (reduceAce(yourSum, yourAceCount) > 21) { 
         canHit = false;
     }
 
@@ -131,7 +131,7 @@ function getValue(card) {
     let data = card.split("-");
     let value = data[0];
 
-    if (isNaN(value)) {
+    if (isNaN(value)) { 
         if (value == "A") {
             return 11;
         }
