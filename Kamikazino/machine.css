@@ -1,0 +1,78 @@
+body {
+    background-color: #618224;
+    background-image: url(machine-a-sous.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.slot-machine {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.reel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.symbol {
+    font-size: 48px;
+    margin: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.betting {
+    display: flex;
+    align-items: center;
+}
+
+.betting label {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.betting input {
+    width: 50px;
+    font-size: 24px;
+}
+
+.betting button {
+    margin-left: 10px;
+    font-size: 24px;
+    padding: 5px 10px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.betting button:hover {
+    background-color: #ffee00;
+}
+
+.status {
+    font-size: 24px;
+}

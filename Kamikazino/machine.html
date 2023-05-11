@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Machine à sous</title>
+    <link rel="stylesheet" type="text/css" href="machine.css">
+</head>
+<body>
+	<img href="home.html" src="kamikaa.png" alt="Kamikazino" class="logo">
+    <div class="container">
+        <h1>Machine à sous</h1>
+        <div class="slot-machine">
+            <div class="reel">
+                <div class="symbol"></div>
+                <div class="symbol"></div>
+                <div class="symbol"></div>
+            </div>
+            <div class="reel">
+                <div class="symbol"></div>
+                <div class="symbol"></div>
+                <div class="symbol"></div>
+            </div>
+            <div class="reel">
+                <div class="symbol"></div>
+                <div class="symbol"></div>
+                <div class="symbol"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="betting">
+                <label for="bet-amount">Mise : </label>
+                <input type="number" id="bet-amount" min="1" max="1000" value="1">
+                <button id="place-bet-button">Placer la mise</button>
+            </div>
+            <div class="status">
+                <span id="balance">Solde : 1000</span>
+                <span id="result"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="machine.js"></script>
+</body>
+</html>

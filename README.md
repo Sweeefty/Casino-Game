@@ -11,3 +11,4 @@
 #La Machine à sous se joue face au casino, vous disposez aussi d'un porte monnaie de 1000$, selon votre alignement de signe votre se 
 #multiplie si vous gagnez et vous perdez votre mise si aucun signe ne s'aligne.
 
+(Soucis ex repo qui a cessé de fonctionner)
