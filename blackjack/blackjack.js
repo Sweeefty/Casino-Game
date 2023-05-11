@@ -21,7 +21,7 @@ function buildDeck() {
 
     for (let i = 0; i < types.length; i++) {
         for (let j = 0; j < values.length; j++) {
-            deck.push(values[j] + "-" + types[i]); 
+            deck.push(values[j] + "-" + types[i]);
         }
     }
 }
@@ -87,7 +87,7 @@ function hit() {
     yourAceCount += checkAce(card);
     document.getElementById("your-cards").append(cardImg);
 
-    if (reduceAce(yourSum, yourAceCount) > 21) { 
+    if (reduceAce(yourSum, yourAceCount) > 21) {
         canHit = false;
     }
 
@@ -131,7 +131,7 @@ function getValue(card) {
     let data = card.split("-");
     let value = data[0];
 
-    if (isNaN(value)) { 
+    if (isNaN(value)) {
         if (value == "A") {
             return 11;
         }
